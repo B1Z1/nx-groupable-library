@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/util-buildable/select/src",
+  "prefix": "nx-index",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/util-buildable/select"],
+      "options": {
+        "project": "libs/util-buildable/select/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/util-buildable/select/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/util-buildable/select/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util-buildable/select"],
+      "options": {
+        "jestConfig": "libs/util-buildable/select/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/util-buildable/select/**/*.ts",
+          "libs/util-buildable/select/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

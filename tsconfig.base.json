@@ -17,8 +17,17 @@
     "paths": {
       "@nx-index/util": ["libs/util/index.ts"],
       "@nx-index/util-buildable": ["libs/util-buildable/index.ts"],
+      "@nx-index/util-buildable/dropdown": [
+        "libs/util-buildable/dropdown/src/index.ts"
+      ],
+      "@nx-index/util-buildable/grid": [
+        "libs/util-buildable/grid/src/index.ts"
+      ],
       "@nx-index/util-buildable/label": [
         "libs/util-buildable/label/src/index.ts"
+      ],
+      "@nx-index/util-buildable/select": [
+        "libs/util-buildable/select/src/index.ts"
       ],
       "@nx-index/util-buildable/tag": ["libs/util-buildable/tag/src/index.ts"],
       "@nx-index/util/button": ["libs/util/button/src/index.ts"]
