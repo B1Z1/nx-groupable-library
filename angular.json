@@ -3,6 +3,10 @@
   "version": 2,
   "projects": {
     "nx-index-test": "apps/nx-index-test",
-    "nx-index-test-e2e": "apps/nx-index-test-e2e"
+    "nx-index-test-e2e": "apps/nx-index-test-e2e",
+    "util-buildable": "libs/util-buildable",
+    "util-buildable-label": "libs/util-buildable/label",
+    "util-buildable-tag": "libs/util-buildable/tag",
+    "util-button": "libs/util/button"
   }
 }

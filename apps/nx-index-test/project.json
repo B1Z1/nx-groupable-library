@@ -4,9 +4,10 @@
   "prefix": "nx-index",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nrwl/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "buildLibsFromSource": false,
         "outputPath": "dist/apps/nx-index-test",
         "index": "apps/nx-index-test/src/index.html",
         "main": "apps/nx-index-test/src/main.ts",

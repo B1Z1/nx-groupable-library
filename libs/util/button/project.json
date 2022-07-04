@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/util/button/src",
+  "prefix": "nx-index",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/util/button"],
+      "options": {
+        "project": "libs/util/button/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/util/button/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/util/button/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util/button"],
+      "options": {
+        "jestConfig": "libs/util/button/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/util/button/**/*.ts",
+          "libs/util/button/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
